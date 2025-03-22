@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        // Enable latest features
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleDetection": "force",
+
+        // Bundler mode
+        "moduleResolution": "NodeNext",
+        "verbatimModuleSyntax": true,
+        "noEmit": false,
+
+        // Best practices
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+
+        // Some stricter flags (disabled by default)
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noPropertyAccessFromIndexSignature": false,
+
+        "rootDir": "src/",
+        "outDir": "dist/",
+
+        "resolveJsonModule": true,
+        "declaration": true
+    },
+    "include": ["src/**/*"]
+}

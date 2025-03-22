@@ -1,0 +1,29 @@
+{
+    "name": "streampack",
+    "description": "Easily read and write binary values to streams and buffers",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+        "url": "https://github.com/SnurfDev/streampack"
+    },
+    "version": "0.1.2",
+    "scripts": {
+        "format": "prettier . --write",
+        "build": "tsc"
+    },
+    "type": "module",
+    "devDependencies": {
+        "prettier": "^3.3.2",
+        "typescript": "^5.0.0"
+    },
+    "keywords": [
+        "streampack",
+        "binary",
+        "buffer",
+        "unpack",
+        "pack",
+        "stream"
+    ],
+    "license": "MIT"
+}
