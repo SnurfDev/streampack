@@ -7,7 +7,7 @@
     "repository": {
         "url": "https://github.com/SnurfDev/streampack"
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "scripts": {
         "format": "prettier . --write",
         "build": "tsc"
@@ -24,6 +24,9 @@
         "unpack",
         "pack",
         "stream"
+    ],
+    "files": [
+        "dist"
     ],
     "license": "MIT"
 }
