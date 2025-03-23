@@ -93,7 +93,7 @@ export class StreamReader {
         return this.read(4)[`readUInt32${this.endiannessSuffix}`]();
     }
     u64() {
-        return this.read(4)[`readBigUInt64${this.endiannessSuffix}`]();
+        return this.read(8)[`readBigUInt64${this.endiannessSuffix}`]();
     }
     i16() {
         return this.read(2)[`readInt16${this.endiannessSuffix}`]();
@@ -102,7 +102,7 @@ export class StreamReader {
         return this.read(4)[`readInt32${this.endiannessSuffix}`]();
     }
     i64() {
-        return this.read(4)[`readBigInt64${this.endiannessSuffix}`]();
+        return this.read(8)[`readBigInt64${this.endiannessSuffix}`]();
     }
 
     // floats
@@ -110,7 +110,7 @@ export class StreamReader {
         return this.read(4)[`readFloat${this.endiannessSuffix}`]();
     }
     f64() {
-        return this.read(4)[`readDouble${this.endiannessSuffix}`]();
+        return this.read(8)[`readDouble${this.endiannessSuffix}`]();
     }
 
     // boolean

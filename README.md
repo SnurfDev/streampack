@@ -19,7 +19,7 @@ The functions for reading and writing numbers are named after the rust number ty
 - `i32`: 32 bit signed integer
 - `u64`: 64 bit unsigned integer
 - `f32`: 32 bit float
-- `u8`: byte
+- `u8`: unsigned byte
 
 Then there is a `bool` function which is just a byte (`0x00` = false, everything else is true).
 
