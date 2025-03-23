@@ -79,6 +79,9 @@ export class StreamReader {
 
     // byte
     u8() {
+        return this.read(1)["readUInt8"]();
+    }
+    i8() {
         return this.read(1)["readInt8"]();
     }
 
@@ -190,6 +193,10 @@ export class StreamWriter {
 
     // byte
     u8(value: number) {
+        this.write(bufferWriter("writeUInt8", value));
+        return this;
+    }
+    i8(value: number) {
         this.write(bufferWriter("writeInt8", value));
         return this;
     }
