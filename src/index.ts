@@ -165,7 +165,7 @@ function bufferWriter<
     }[keyof Buffer],
 >(fn: T, v: Parameters<Buffer[T]>[0]): Buffer {
     const buf = Buffer.allocUnsafe(256); // Max Len
-    const n = (buf[fn] as (v: Parameters<Buffer[T]>[0]) => number)(v);
+    const n = (buf[fn] as (v: Parameters<Buffer[T]>[0],o: Parameters<Buffer[T]>[1]) => number)(v, 0); // Add offset for bun bug (https://github.com/oven-sh/bun/issues/15556)
     return buf.subarray(0, n);
 }
 
