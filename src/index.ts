@@ -36,6 +36,8 @@ export class BufferWriter extends Writable {
         }
 
         this.ptr += data.copy(this.buffer, this.ptr);
+
+        callback(null);
     }
 }
 
